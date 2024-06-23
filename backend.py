@@ -1,9 +1,12 @@
+import os
+from dotenv import load_dotenv 
 from groq import Groq
 
-
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 class Chatbot:
     def __init__(self):
-        self.api_key = "GROQ_API_KEY"
+        self.api_key = GROQ_API_KEY
 
     def get_response(self, user_input):
         client = Groq(api_key=self.api_key)

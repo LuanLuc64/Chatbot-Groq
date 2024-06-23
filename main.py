@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from PyQt6.QtWidgets import QApplication, QMainWindow, QTextEdit, QLineEdit, QPushButton
 from backend import Chatbot
 import threading
@@ -7,6 +7,7 @@ import threading
 class ChatbotWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowTitle("GroqUI")
 
         # Initialize the Chatbot
         self.chatbot = Chatbot()
