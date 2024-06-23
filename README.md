@@ -4,8 +4,9 @@ This is an interactive chatbot built using Python, PyQt6, and Groq. It demonstra
 ## Prerequisites
 1. Python 3.x installed
 2. PyQt6 library installed (`pip install PyQt6`)
-3. Groq account and API key (visit [console.groq.com](https://console.groq.com) to sign up)
-4. Familiarity with Python, PyQt, and basic GUI development
+3. dotenv library installed (`pip install python-dotenv`)
+4. Groq account and API key (visit [console.groq.com](https://console.groq.com) to sign up)
+5. Familiarity with Python, PyQt, python-dotenv and basic GUI development
 
 ## Usage
 1. Run the chatbot: `python main.py`
